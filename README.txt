@@ -9,10 +9,11 @@ Learning points:
 2. Using Facebook prophet, which is designed to predict sales patterns, was not successful here. This is 
 likely due to the characteristic of that model which makes it appropriate for sales (not epidemiology)
 3. Other online LSTMs may be appropriate for epidemilogical data
+4. Simple NN with better preprocessing vastly outperformed LSTM.
 
 
 TODO
 1. Train the LSTM on all data once it has been scaled correctly. I want to scale all the data so that it sits between -1 and 1 but
 also preserve the relative differences between the number of cases. This will likely generate bizzare results as China's cases dwarf the rest
 of the world's right now.
-2. In light of (1) it may be appropriate to work with the number of cases on a log scale.
+2. In light of (1) it may be appropriate to work with the number of cases on a log scale. DONE.
